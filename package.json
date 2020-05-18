@@ -1,0 +1,19 @@
+{
+  "name": "integration-4",
+  "version": "1.0.0",
+  "description": "Exercice d'intégration responsive en groupe de 2 avec SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss:style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumePerbet/integration-4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuillaumePerbet/integration-4/issues"
+  },
+  "homepage": "https://github.com/GuillaumePerbet/integration-4#readme"
+}
