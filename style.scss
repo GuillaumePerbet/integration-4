@@ -2,14 +2,6 @@
 @import 'modules/_colors';
 @import 'modules/_boxmodel';
 
-// Reset<<____________________________________________________________
-body{
-    @extend %font-init;
-    @extend %col-init;
-    @extend %box-init;
-    height: 100%;
-}
-body *{box-sizing: border-box;}
-a{text-decoration: none; color:$c-main-light;}
-li{list-style: none;}
-// Reset>>____________________________________________________________
+// INITIALIZE____________________________________________
+@import 'modules/_reset';
+
