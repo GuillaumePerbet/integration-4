@@ -1,0 +1,10 @@
+@import 'modules/_fonts';
+
+// Reset<<____________________________________________________________
+body{
+    @extend %font-init;
+    margin: 0;
+    height: 100%;
+}
+a{text-decoration: none;}
+// Reset>>____________________________________________________________

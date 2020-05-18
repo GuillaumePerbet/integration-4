@@ -1,0 +1,57 @@
+// Icones ELEGANT<<_______________________________________________
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('fonts/ElegantIcons.eot');
+	src:url('fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ElegantIcons.woff') format('woff'),
+		url('fonts/ElegantIcons.ttf') format('truetype'),
+		url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class*='icon-']{
+	font-family: 'ElegantIcons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-facebook:before   {content: "\e093";}
+.icon-twitter:before    {content: "\e094";}
+.icon-tumblr:before     {content: "\e097";}
+.icon-instagram:before  {content: "\e09a";}
+.icon-dribbble:before   {content: "\e09b";}
+.icon-vimeo:before      {content: "\e09c";}
+.icon-linkedin:before   {content: "\e09d";}
+.icon-rss:before        {content: "\e09e";}
+.icon-search:before     {content: "\55";  }
+// Icones ELEGANT>>_______________________________________________
+
+// FONTS Variables________________________________________________
+$font-main: 'Lato', sans-serif;
+$font-base-size: 14;
+
+    // Initialisation
+    %font-init{
+        font-family: $font-main;
+        font-size:   $font-base-size+px;
+        font-weight: 400;
+    }
+    // FONT Sizes______________
+    .f-13   {   font-size: 13/$font-base-size+rem;      }
+    .f-14   {   font-size: 14/$font-base-size+rem;      }
+    .f-15   {   font-size: 15/$font-base-size+rem;      }
+    .f-16   {   font-size: 16/$font-base-size+rem;      }
+    .f-18   {   font-size: 18/$font-base-size+rem;      }
+    .f-24   {   font-size: 24/$font-base-size+rem;      }
+    .f-30   {   font-size: 30/$font-base-size+rem;      }
+    .f-36   {   font-size: 35.69/$font-base-size+rem;   }
+
+    // FONT Weight_____________
+    .f-regular {    font-weight: 400;   }
+    .f-bold    {    font-weight: 700;   }
+    .f-black   {    font-weight: 900;   }
+
