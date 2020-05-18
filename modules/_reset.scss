@@ -15,3 +15,5 @@ body *{box-sizing: border-box;}
 a{text-decoration: none; color:$c-main-light;}
 // hide lists bullets
 li{list-style: none;}
+// reset lists padding
+ul,menu{padding-left: 0px;}
