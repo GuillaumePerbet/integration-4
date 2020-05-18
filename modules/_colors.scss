@@ -1,0 +1,29 @@
+// COLOR Variables________________________________________________
+$c-main:        #21C2F8;
+$c-main-dark:   #34495E;
+$c-main-light:  #A1B1BC;
+$c-sec:         #1ABC9C;
+$c-grey:        #ECF0F1;
+$c-black:       #222533;
+$c-white:       #ffffff;
+
+// Initialisation
+%col-init{
+    color: $c-main-light;
+    background-color: $c-grey;
+}
+
+// TEXT colors_________________________________________________
+.txt-dark           {   color: $c-main-dark     }
+.txt-light          {   color: $c-main-light    }
+.txt-sec            {   color: $c-sec           }
+.txt-white          {   color: $c-white         }
+
+// BACKGROUND colors___________________________________________
+.bck-main           {   color: $c-main          }
+.bck-main-dark      {   color: $c-main-dark     }
+.bck-main-light     {   color: $c-main-light    }
+.bck-sec            {   color: $c-sec           }
+.bck-grey           {   color: $c-grey          }
+.bck-black          {   color: $c-black         }
+.bck-white          {   color: $c-white         }
