@@ -1,0 +1,17 @@
+// INITIALIZE____________________________________________
+body{
+    font-family: $font-main;
+    font-size:   $font-base-size+px;
+    font-weight: 400;
+    color: $c-main-light;
+    background-color: $c-grey;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+// border-box all
+body *{box-sizing: border-box;}
+// reset links style
+a{text-decoration: none; color:$c-main-light;}
+// hide lists bullets
+li{list-style: none;}

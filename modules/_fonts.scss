@@ -18,7 +18,7 @@
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-
+// Icon Classes
 .icon-facebook:before   {content: "\e093";}
 .icon-twitter:before    {content: "\e094";}
 .icon-tumblr:before     {content: "\e097";}
@@ -34,12 +34,6 @@
 $font-main: 'Lato', sans-serif;
 $font-base-size: 14;
 
-    // Initialisation
-    %font-init{
-        font-family: $font-main;
-        font-size:   $font-base-size+px;
-        font-weight: 400;
-    }
     // FONT Sizes______________
     .f-13   {   font-size: 13/$font-base-size+rem;      }
     .f-14   {   font-size: 14/$font-base-size+rem;      }
@@ -50,7 +44,7 @@ $font-base-size: 14;
     .f-30   {   font-size: 30/$font-base-size+rem;      }
     .f-36   {   font-size: 35.69/$font-base-size+rem;   }
 
-    // FONT Weight_____________
+    // FONT Weights_____________
     .f-regular {    font-weight: 400;   }
     .f-bold    {    font-weight: 700;   }
     .f-black   {    font-weight: 900;   }

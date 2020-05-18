@@ -7,12 +7,6 @@ $c-grey:        #ECF0F1;
 $c-black:       #222533;
 $c-white:       #ffffff;
 
-// Initialisation
-%col-init{
-    color: $c-main-light;
-    background-color: $c-grey;
-}
-
 // TEXT colors_________________________________________________
 .txt-dark           {   color: $c-main-dark     }
 .txt-light          {   color: $c-main-light    }
