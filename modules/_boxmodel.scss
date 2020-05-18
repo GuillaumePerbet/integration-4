@@ -1,0 +1,11 @@
+// Basic Resets____________________________________________________
+.m0{margin: 0px;}
+.m0child *{margin: 0px;}
+.p0{padding: 0px;}
+.mp0{margin: 0px; padding: 0px;}
+
+// Initialisation
+%box-init{
+    margin: 0px;
+    padding: 0px;
+}
