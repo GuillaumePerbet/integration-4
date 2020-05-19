@@ -17,3 +17,5 @@ a{text-decoration: none; color:$c-main-light;}
 li{list-style: none;}
 // reset lists padding
 ul,menu{padding-left: 0px;}
+//reset select style
+select{border: none; background-color: inherit;}
