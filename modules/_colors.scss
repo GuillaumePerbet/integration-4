@@ -18,13 +18,13 @@ $c-white:       #ffffff;
 .txt-white          {   @extend %txt-white ;     }
 
 // BACKGROUND colors___________________________________________
-%bck-main           {   color: $c-main           }
-%bck-main-dark      {   color: $c-main-dark      }
-%bck-main-light     {   color: $c-main-light     }
-%bck-sec            {   color: $c-sec            }
-%bck-grey           {   color: $c-grey           }
-%bck-black          {   color: $c-black          }
-%bck-white          {   color: $c-white          }
+%bck-main           {   background-color: $c-main           }
+%bck-main-dark      {   background-color: $c-main-dark      }
+%bck-main-light     {   background-color: $c-main-light     }
+%bck-sec            {   background-color: $c-sec            }
+%bck-grey           {   background-color: $c-grey           }
+%bck-black          {   background-color: $c-black          }
+%bck-white          {   background-color: $c-white          }
 .bck-main           {   @extend %bck-main ;      }
 .bck-main-dark      {   @extend %bck-main-dark ; }
 .bck-main-light     {   @extend %bck-main-light ;}
