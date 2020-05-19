@@ -11,3 +11,20 @@
 
 
 // FOOTER________________________________________________
+#footerTop{
+    padding: 100px 0px;
+    a       {  @extend %txt-white;  }
+    a:hover {  @extend %txt-sec;    }
+}
+
+#footerDown{
+    padding: 22px 0px;
+    ul      { flex: 0 18%;          }
+    a:hover { @extend %txt-white;   }
+}
+
+.footer-sec{
+    flex: 0 24%;
+    hr      { border:0; height: 1px; background-color: rgba(255, 255, 255, 0.3); }
+    hr:nth-child(2){ border:0; height: 3px; width: 70px; @extend %bck-sec; margin: auto 0px;  }
+}
