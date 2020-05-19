@@ -1,11 +1,12 @@
 // Container Class
 .masonry {
     column-count: 3;
-    column-gap: 2em;
+    column-gap: 1.8em;
   }
 // Item Class
 .masonry-item {
   @extend %bck-white;
   display: inline-block;
   width: 100%;
+  border: 1px solid $c-grey;
 }
