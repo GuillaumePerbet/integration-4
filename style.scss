@@ -90,11 +90,11 @@
     margin-left: 10px;
     a{  display: block; width: 50px; height: 50px; text-align: center; @extend %txt-white;
         span    {   display: block; padding: 18px 0px;  }
-    }
-    a:hover{
-        border-radius: 5px;
-        @extend %bck-main-dark;
-        @extend %txt-sec;
+        &:hover{
+            border-radius: 5px;
+            @extend %bck-main-dark;
+            @extend %txt-sec;
+        }
     }
 }
 .icon-home{
@@ -109,8 +109,9 @@
 // FOOTER________________________________________________
 #footerTop{
     padding: 100px 0px;
-    a       {  @extend %txt-white;  }
-    a:hover {  @extend %txt-sec;    }
+    a{  @extend %txt-white;
+        &:hover {  @extend %txt-sec;    }
+    }
 }
 #footerDown{
     border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -121,6 +122,7 @@
 }
 .footer-sec{
     flex: 0 24%;
-    hr              { border:0; height: 1px; background-color: rgba(255, 255, 255, 0.3);     }
-    hr:nth-child(2) { border:0; height: 3px; width: 70px; @extend %bck-sec; margin: auto 0px;  }
+    hr{ border:0; height: 1px; background-color: rgba(255, 255, 255, 0.3);
+        &:nth-child(2) { height: 3px; width: 70px; @extend %bck-sec; margin: auto 0px;  }
+    }
 }
