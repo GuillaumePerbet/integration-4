@@ -32,18 +32,17 @@
 
 // FONTS Variables________________________________________________
 $font-main: 'Lato', sans-serif;
-$font-base-size: 14;
 
     // FONT Sizes______________
-    %f-13   {   font-size: 13/$font-base-size+rem;      }
-    %f-14   {   font-size: 14/$font-base-size+rem;      }
-    %f-15   {   font-size: 15/$font-base-size+rem;      }
-    %f-16   {   font-size: 16/$font-base-size+rem;      }
-    %f-18   {   font-size: 18/$font-base-size+rem;      }
-    %f-20   {   font-size: 20/$font-base-size+rem;      }
-    %f-24   {   font-size: 24/$font-base-size+rem;      }
-    %f-30   {   font-size: 30/$font-base-size+rem;      }
-    %f-36   {   font-size: 35.69/$font-base-size+rem;   }
+    %f-13   {   font-size: 13/16+rem;      }
+    %f-14   {   font-size: 14/16+rem;      }
+    %f-15   {   font-size: 15/16+rem;      }
+    %f-16   {   font-size: 16/16+rem;      }
+    %f-18   {   font-size: 18/16+rem;      }
+    %f-20   {   font-size: 20/16+rem;      }
+    %f-24   {   font-size: 24/16+rem;      }
+    %f-30   {   font-size: 30/16+rem;      }
+    %f-36   {   font-size: 35.69/16+rem;   }
     .f-13   {   @extend %f-13 ;   }
     .f-14   {   @extend %f-14 ;   }
     .f-15   {   @extend %f-15 ;   }
