@@ -6,16 +6,20 @@ $c-sec:         #1ABC9C;
 $c-grey:        #ECF0F1;
 $c-black:       #222533;
 $c-white:       #ffffff;
+$c-logo:        #2C3E50;
+$c-deco:        #414E5C;
 
 // TEXT colors_________________________________________________
 %txt-dark           {   color: $c-main-dark      }
 %txt-light          {   color: $c-main-light     }
 %txt-sec            {   color: $c-sec            }
 %txt-white          {   color: $c-white          }
+%txt-logo           {   color: $c-logo           }
 .txt-dark           {   @extend %txt-dark ;      }
 .txt-light          {   @extend %txt-light ;     }
 .txt-sec            {   @extend %txt-sec ;       }
 .txt-white          {   @extend %txt-white ;     }
+.txt-logo           {   @extend %txt-logo ;     }
 
 // BACKGROUND colors___________________________________________
 %bck-main           {   background-color: $c-main           }
@@ -25,6 +29,7 @@ $c-white:       #ffffff;
 %bck-grey           {   background-color: $c-grey           }
 %bck-black          {   background-color: $c-black          }
 %bck-white          {   background-color: $c-white          }
+%bck-deco           {   background-color: $c-deco          }
 .bck-main           {   @extend %bck-main ;      }
 .bck-main-dark      {   @extend %bck-main-dark ; }
 .bck-main-light     {   @extend %bck-main-light ;}
@@ -32,3 +37,4 @@ $c-white:       #ffffff;
 .bck-grey           {   @extend %bck-grey ;      }
 .bck-black          {   @extend %bck-black ;     }
 .bck-white          {   @extend %bck-white ;     }
+.bck-deco           {   @extend %bck-deco ;      }

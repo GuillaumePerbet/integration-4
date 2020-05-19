@@ -4,10 +4,12 @@ body{
     font-size:   $font-base-size+px;
     font-weight: 400;
     color: $c-main-light;
-    background-color: $c-grey;
     margin: 0px;
     padding: 0px;
     height: 100%;
+}
+main{
+    background-color: $c-grey;
 }
 // border-box all
 body *{box-sizing: border-box;}
@@ -18,9 +20,6 @@ li{list-style: none;}
 // reset lists padding
 ul,menu{padding-left: 0px;}
 //reset select style
-select{
-    -webkit-appearance : none;
-    -moz-appearance : none;
-    background : none;
-    border: none;
-}
+select{-webkit-appearance : none; -moz-appearance : none; background : none; border: none;}
+//reset button style
+button{border: none; background: none;}
