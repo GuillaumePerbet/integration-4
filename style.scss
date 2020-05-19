@@ -146,7 +146,7 @@ section{
     height: 90px;
     padding: 30px;
     align-items: center;
-
+    user-select: none;
     progress {
         appearance: none;
         border: none;
