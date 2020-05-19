@@ -83,6 +83,57 @@
     }
 }
 
+//SECTION________________________________________________
+section{
+    padding: 1.25rem;
+
+    header{
+
+        &::after{
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: $c-grey;
+        }
+    }
+
+    p{
+        line-height: 1.5rem;
+    }
+
+    .btn{
+        margin: 2rem 0;
+
+        a{
+            letter-spacing: 0.15rem;
+            padding: 0.75rem;
+            border-radius: 3px;
+
+            &:hover{
+                background-color: $c-sec;
+            }
+        }
+    }
+
+    footer{
+
+        &::before{
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: $c-grey;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: $c-grey;
+        }
+    }
+    
+}
+
 // NAV BOTTOM____________________________________________
 #navbottom{ padding-top: 100px; padding-bottom: 30px; border-top: 1px solid $c-main-light;  }
 .btn-navbottom{

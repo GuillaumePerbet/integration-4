@@ -31,7 +31,8 @@ $c-deco:        #414E5C;
 %bck-grey           {   background-color: $c-grey           }
 %bck-black          {   background-color: $c-black          }
 %bck-white          {   background-color: $c-white          }
-%bck-deco           {   background-color: $c-deco          }
+%bck-deco           {   background-color: $c-deco           }
+%bck-logo           {   background-color: $c-logo           }
 .bck-main           {   @extend %bck-main ;      }
 .bck-main-dark      {   @extend %bck-main-dark ; }
 .bck-main-light     {   @extend %bck-main-light ;}
@@ -40,4 +41,5 @@ $c-deco:        #414E5C;
 .bck-grey           {   @extend %bck-grey ;      }
 .bck-black          {   @extend %bck-black ;     }
 .bck-white          {   @extend %bck-white ;     }
+.bck-logo           {   @extend %bck-logo ;      }
 .bck-deco           {   @extend %bck-deco ;      }
