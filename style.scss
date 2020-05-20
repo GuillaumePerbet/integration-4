@@ -16,7 +16,7 @@
     }
 
     button{
-        border: 1px solid $c-grey;
+        border: 1px solid #ECF0F1;
         border-radius: 3px;
         padding: 0.5rem;
         padding-right: 0.7rem;
@@ -24,7 +24,7 @@
 
 
         svg{
-            fill: $c-sec;
+            fill: #1ABC9C;
             margin-right: 0.5rem;
         }
     }
@@ -51,10 +51,10 @@
         width: 2rem;
         height: 0.25rem;
         margin: 0 auto 1.25rem;
-        background-color: $c-sec;
+        @extend %bck-sec;
     }
 
-    box-shadow: 0px 3px 7px rgba($color: #000000, $alpha: 0.1);
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
     padding-bottom: 1.5rem;
 
     #logo{
@@ -69,7 +69,8 @@
         margin-left: 0.5rem;
 
         a:hover{
-            color: $c-sec;
+            @extend %txt-sec;
+            color: map-get($colors, 'sec');
         }
     }
 
@@ -101,7 +102,7 @@ section{
             content: '';
             display: block;
             height: 1px;
-            background-color: $c-grey;
+            @extend %bck-grey;
         }
     }
 
@@ -118,7 +119,7 @@ section{
             border-radius: 3px;
 
             &:hover{
-                background-color: $c-sec;
+                @extend %bck-sec;
             }
         }
     }
@@ -129,14 +130,14 @@ section{
             content: '';
             display: block;
             height: 1px;
-            background-color: $c-grey;
+            @extend %bck-grey;
         }
 
         &::after{
             content: '';
             display: block;
             height: 1px;
-            background-color: $c-grey;
+            @extend %bck-grey;
         }
     }
 
@@ -179,10 +180,10 @@ section{
     }
 
     &:hover{
-        background-color: $c-logo;
-        border-color: $c-border;
+        @extend %bck-logo;
+        border-color: #405060;
         h2{
-            color: white;
+            @extend %txt-white;
         }
     }
 }
@@ -279,7 +280,7 @@ section{
       }
 }
 // NAV BOTTOM____________________________________________
-#navbottom{ padding-top: 100px; padding-bottom: 30px; border-top: 1px solid $c-grey;  }
+#navbottom{ padding-top: 100px; padding-bottom: 30px; border-top: 1px solid #ECF0F1;  }
 .btn-navbottom{
     border-radius: 5px;
     margin-left: 10px;
