@@ -294,14 +294,17 @@ section{
     }
 }
 .icon-home{
-    background-image: url(/media/Icons/home.svg);
-    background-size: 18px;
-    background-repeat: no-repeat;
-    background-position: center;
+    svg{
+        fill: white;
+        margin-top: 15px;
+    }
+    &:hover{
+        svg{
+            fill: map-get($colors , 'sec' );
+        }
+    }
 }
-.icon-home:hover{
-    background-image: url(/media/Icons/home2.svg);
-}
+
 // FOOTER________________________________________________
 #footerTop{
     padding: 100px 0px;
