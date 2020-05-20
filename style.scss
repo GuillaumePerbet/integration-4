@@ -186,7 +186,39 @@ section{
         }
     }
 }
-    
+// Standard Hover_________________________________________
+.standard-img{
+    position: relative;
+    &:hover{
+        .standard-hover{display: flex;}
+    }
+    .standard-hover{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width:100%;
+        height: 100%;
+        p:nth-child(2){margin-top: 20px;}
+        .btn-round>a{
+            display: block;
+            border: 1px solid $c-white;
+            padding: 10px 10px;
+            border-radius: 50%;
+            max-width: 40px;
+            max-height: 40px;
+            margin: 5px;
+
+            &:hover{
+                @extend %bck-main;
+                border: 1px solid $c-main;
+            }
+        }
+    }
+}
+
 // Color Block____________________________________________
 .colorblock{
     display: block;
