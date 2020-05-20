@@ -8,5 +8,5 @@
   @extend %bck-white;
   display: inline-block;
   width: 100%;
-  border: 1px solid #ECF0F1;
+  border: 1px solid map-get($colors, 'grey');
 }
