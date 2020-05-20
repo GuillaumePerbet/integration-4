@@ -1,47 +1,34 @@
-// COLOR Variables________________________________________________
-$c-main:        #21C2F8;
-$c-main-dark:   #34495E;
-$c-main-light:  #A1B1BC;
-$c-main-black:  #222533;
-$c-sec:         #1ABC9C;
-$c-grey:        #ECF0F1;
-$c-grey30:      rgba(236, 240, 241, 0.3);
-$c-black:       #171D22;
-$c-white:       #ffffff;
-$c-logo:        #2C3E50;
-$c-deco:        #414E5C;
-$c-border:      #405060;
+//COLOR List
+$colors:(
+    'main':        #21C2F8,
+    'main-dark':   #34495E,
+    'main-light':  #A1B1BC,
+    'main-black':  #222533,
+    'sec':         #1ABC9C,
+    'grey':        #ECF0F1,
+    'grey30':      rgba(236, 240, 241, 0.3),
+    'black':       #171D22,
+    'white':       #ffffff,
+    'logo':        #2C3E50,
+    'deco':        #414E5C,
+    'border':      #405060
+);
 
-// TEXT colors_________________________________________________
-%txt-dark           {   color: $c-main-dark     }
-%txt-light          {   color: $c-main-light     }
-%txt-sec            {   color: $c-sec            }
-%txt-white          {   color: $c-white          }
-%txt-logo           {   color: $c-logo           }
-.txt-dark           {   @extend %txt-dark ;      }
-.txt-light          {   @extend %txt-light ;     }
-.txt-sec            {   @extend %txt-sec ;       }
-.txt-white          {   @extend %txt-white ;     }
-.txt-logo           {   @extend %txt-logo ;     }
+@each $name,$value in $colors{
 
-// BACKGROUND colors___________________________________________
-%bck-main           {   background-color: $c-main           }
-%bck-main-dark      {   background-color: $c-main-dark      }
-%bck-main-light     {   background-color: $c-main-light     }
-%bck-main-black     {   background-color: $c-main-black     }
-%bck-sec            {   background-color: $c-sec            }
-%bck-grey           {   background-color: $c-grey           }
-%bck-black          {   background-color: $c-black          }
-%bck-white          {   background-color: $c-white          }
-%bck-deco           {   background-color: $c-deco           }
-%bck-logo           {   background-color: $c-logo           }
-.bck-main           {   @extend %bck-main ;      }
-.bck-main-dark      {   @extend %bck-main-dark ; }
-.bck-main-light     {   @extend %bck-main-light ;}
-.bck-main-black     {   @extend %bck-main-black ;}
-.bck-sec            {   @extend %bck-sec ;       }
-.bck-grey           {   @extend %bck-grey ;      }
-.bck-black          {   @extend %bck-black ;     }
-.bck-white          {   @extend %bck-white ;     }
-.bck-logo           {   @extend %bck-logo ;      }
-.bck-deco           {   @extend %bck-deco ;      }
+    //text color extension
+    %txt-#{$name}{color: $value;}
+
+    //text color class
+    .txt-#{$name}{
+        color: $value;
+    }
+
+    //background color extension
+    %bck-#{$name}{background-color: $value;}
+
+    //background color class
+    .bck-#{$name}{
+        color: $value;
+    }
+}
