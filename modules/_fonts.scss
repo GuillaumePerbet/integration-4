@@ -33,37 +33,23 @@
 // FONTS Variables________________________________________________
 $font-main: 'Lato', sans-serif;
 
-    // FONT Sizes______________
-    %f-13   {   font-size: 13/16+rem;      }
-    %f-14   {   font-size: 14/16+rem;      }
-    %f-15   {   font-size: 15/16+rem;      }
-    %f-16   {   font-size: 16/16+rem;      }
-    %f-18   {   font-size: 18/16+rem;      }
-    %f-20   {   font-size: 20/16+rem;      }
-    %f-24   {   font-size: 24/16+rem;      }
-    %f-30   {   font-size: 30/16+rem;      }
-    %f-36   {   font-size: 35.69/16+rem;   }
-    .f-13   {   @extend %f-13 ;   }
-    .f-14   {   @extend %f-14 ;   }
-    .f-15   {   @extend %f-15 ;   }
-    .f-16   {   @extend %f-16 ;   }
-    .f-18   {   @extend %f-18 ;   }
-    .f-20   {   @extend %f-20 ;   }
-    .f-24   {   @extend %f-24 ;   }
-    .f-30   {   @extend %f-30 ;   }
-    .f-36   {   @extend %f-36 ;   }
+// FONTS Size____________________________________________________
+$font-sizes: 13 14 15 16 18 20 24 30 36;
+@each $size in $font-sizes{
+    .f-#{$size}{
+        $size: $size/16;
+        font-size: #{$size}rem;
+    }
+}
 
-    // FONT Weights_____________
-    %f-regular {    font-weight: 400;   }
-    %f-bold    {    font-weight: 700;   }
-    %f-black   {    font-weight: 900;   }
-    .f-regular {    @extend %f-regular ;}
-    .f-bold    {    @extend %f-bold ;   }
-    .f-black   {    @extend %f-black ;  }
+// FONT Weights_____________
+.f-regular {    font-weight: 400;   }
+.f-bold    {    font-weight: 700;   }
+.f-black   {    font-weight: 900;   }
 
-    // Align_________________
-    .txt-left       {   text-align     : left;      }
-    .txt-right      {   text-align     : right;     }
-    .txt-center     {   text-align     : center;    }
-    .txt-justify    {   text-align     : justify;   }
+// Align_________________
+.txt-left       {   text-align     : left;      }
+.txt-right      {   text-align     : right;     }
+.txt-center     {   text-align     : center;    }
+.txt-justify    {   text-align     : justify;   }
 
