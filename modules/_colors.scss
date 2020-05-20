@@ -11,7 +11,8 @@ $colors:(
     'white':       #ffffff,
     'logo':        #2C3E50,
     'deco':        #414E5C,
-    'border':      #405060
+    'border':      #405060,
+    'audio':       #00FFCD
 );
 
 @each $name,$value in $colors{

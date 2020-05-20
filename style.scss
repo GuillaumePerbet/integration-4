@@ -13,18 +13,36 @@
 
     form{
         flex-grow: 1;
+
+        select{
+            padding-right: 1rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        span{
+            position: relative;
+            right: 1rem;
+            top: 0.1rem;
+            z-index: -1;
+        }
     }
 
     button{
-        border: 1px solid #ECF0F1;
+        border: 1px solid map-get($colors, 'grey');
         border-radius: 3px;
         padding: 0.5rem;
         padding-right: 0.7rem;
         margin: 0.625rem 0;
+        &:hover{
+            cursor: pointer;
+        }
 
 
         svg{
-            fill: #1ABC9C;
+            fill: map-get($colors, 'sec');
             margin-right: 0.5rem;
         }
     }
@@ -58,8 +76,8 @@
     padding-bottom: 1.5rem;
 
     #logo{
-        span:last-of-type{
-            margin-left: -0.7rem;
+        img{
+            margin-right: 1rem;
         }
     }
 
@@ -78,6 +96,7 @@
 
 #title{
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #breadcrumb{
@@ -181,7 +200,7 @@ section{
 
     &:hover{
         @extend %bck-logo;
-        border-color: #405060;
+        border-color: map-get($colors, 'border');
         h2{
             @extend %txt-white;
         }
@@ -205,7 +224,7 @@ section{
         p:nth-child(2){margin-top: 20px;}
         .btn-round>a{
             display: block;
-            border: 1px solid white;
+            border: 1px solid map-get($colors, 'white');
             padding: 10px 10px;
             border-radius: 50%;
             max-width: 40px;
@@ -274,13 +293,13 @@ section{
         }
         &.audio-volumeline{
             width: 50px;
-            &::-moz-progress-bar {background-color: #00FFCD;}
-            &::-webkit-progress-bar {background-color: #00FFCD;}
+            &::-moz-progress-bar {@extend %bck-audio;}
+            &::-webkit-progress-bar {@extend %bck-audio;}
         }
       }
 }
 // NAV BOTTOM____________________________________________
-#navbottom{ padding-top: 100px; padding-bottom: 30px; border-top: 1px solid #ECF0F1;  }
+#navbottom{ padding-top: 100px; padding-bottom: 30px; border-top: 1px solid map-get($colors, 'grey');  }
 .btn-navbottom{
     border-radius: 5px;
     margin-left: 10px;
