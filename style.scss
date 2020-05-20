@@ -187,6 +187,40 @@ section{
     }
 }
     
+// Color Block____________________________________________
+.colorblock{
+    display: block;
+    margin-bottom: 35px;
+    header{
+        box-sizing: border-box;
+        padding: 20px 50px 0px 20px;
+        position: relative;
+        p{
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        div{
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+        }
+    }
+    &>p{
+        padding: 10px 20px;
+    }
+    &:hover{
+        @extend %bck-main-dark;
+        header{
+            div{
+                @extend %txt-sec;
+            }
+        }
+        &>p{
+            @extend %txt-sec;
+        }
+    }
+}
+
 // Audio Player____________________________________________
 .audioplayer{
     height: 90px;
