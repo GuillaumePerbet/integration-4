@@ -172,6 +172,21 @@ section{
         }
     }
 }
+// Text only_______________________________________________
+.textonly{
+    h2{
+        margin-top: 0;
+    }
+
+    &:hover{
+        background-color: $c-logo;
+        border-color: $c-border;
+        h2{
+            color: white;
+        }
+    }
+}
+    
 // Audio Player____________________________________________
 .audioplayer{
     height: 90px;
