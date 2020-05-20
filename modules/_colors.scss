@@ -29,6 +29,7 @@ $colors:(
 
     //background color class
     .bck-#{$name}{
-        color: $value;
+        background-color: $value;
     }
+    
 }
