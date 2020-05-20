@@ -220,7 +220,6 @@ section{
     .standard-hover{
         display: none;
         justify-content: center;
-        align-items: center;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -282,7 +281,6 @@ section{
 .audioplayer{
     height: 90px;
     padding: 30px;
-    align-items: center;
     user-select: none;
     progress {
         appearance: none;
