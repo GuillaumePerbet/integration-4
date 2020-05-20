@@ -205,7 +205,7 @@ section{
         p:nth-child(2){margin-top: 20px;}
         .btn-round>a{
             display: block;
-            border: 1px solid $c-white;
+            border: 1px solid white;
             padding: 10px 10px;
             border-radius: 50%;
             max-width: 40px;
@@ -214,7 +214,7 @@ section{
 
             &:hover{
                 @extend %bck-main;
-                border: 1px solid $c-main;
+                border: 1px solid map-get($colors, 'main');
             }
         }
     }
