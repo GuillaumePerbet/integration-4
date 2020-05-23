@@ -277,10 +277,11 @@ section{
 }
 
 // Audio Player____________________________________________
-.audio-player-cont{
+.audioplayer{
     height: 90px;
     padding: 30px;
     user-select: none;
+    div:nth-child(2) , div:nth-child(5){cursor: pointer;}
     progress {
         appearance: none;
         border: none;
@@ -292,15 +293,16 @@ section{
 .audioslider{
     position: relative;
 }
-.sliderBack , .sliderTime , .song-slider{
+
+.sliderBack , .slider-time , .song-slider{
     width: 75px;
     height: 10px;
 }
-.volumeBack , .volumeTime , .volume-slider{
+.volumeBack , .volume-time , .volume-slider{
     width: 50px;
     height: 10px;
 }
-.sliderTime , .volumeTime{
+.slider-time , .volume-time{
     position: relative;
     width: 50px;
     top: 4px;
@@ -317,10 +319,10 @@ section{
     opacity: 0;
 }
 
-.sliderTime{
+.slider-time{
     background-color: map-get($colors , 'main-dark' );
 }
-.volumeTime{
+.volume-time{
     background-color: #00FFCD;
 }
 
