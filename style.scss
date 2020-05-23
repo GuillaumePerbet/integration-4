@@ -277,7 +277,7 @@ section{
 }
 
 // Audio Player____________________________________________
-.audioplayer{
+.audio-player-cont{
     height: 90px;
     padding: 30px;
     user-select: none;
@@ -287,19 +287,43 @@ section{
         height: 13px;
         position: relative;
         top: -1px;
-
-        &.audio-timeline{
-            width: 75px;
-            &::-moz-progress-bar {@extend %bck-main-dark;}
-            &::-webkit-progress-bar {@extend %bck-main-dark;}
-        }
-        &.audio-volumeline{
-            width: 50px;
-            &::-moz-progress-bar {@extend %bck-audio;}
-            &::-webkit-progress-bar {@extend %bck-audio;}
-        }
       }
 }
+.audioslider{
+    position: relative;
+}
+.sliderBack , .sliderTime , .song-slider{
+    width: 75px;
+    height: 10px;
+}
+.volumeBack , .volumeTime , .volume-slider{
+    width: 50px;
+    height: 10px;
+}
+.sliderTime , .volumeTime{
+    position: relative;
+    width: 50px;
+    top: 4px;
+}
+.sliderBack , .volumeBack{
+    background-color: white;
+    position: relative;
+    top: 14px;
+}
+.song-slider , .volume-slider{
+    position: relative;
+    top: -10px;
+    left: -2px;
+    opacity: 0;
+}
+
+.sliderTime{
+    background-color: map-get($colors , 'main-dark' );
+}
+.volumeTime{
+    background-color: #00FFCD;
+}
+
 // NAV BOTTOM____________________________________________
 #navbottom{ padding-top: 100px; padding-bottom: 30px; border-top: 1px solid map-get($colors, 'grey');  }
 .btn-navbottom{

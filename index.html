@@ -329,35 +329,7 @@
                 </footer>
             </section>
             
-            <!-- POST Audio 1__________________________________________ -->
-            <section class="bck-white masonry-item">
-                <header>
-                    <div class="audioplayer bck-main-light flex-spaceb flex-align">
-                        <div class="audio-btn-play"><img src="media/audioplayer/play.svg" alt="" width="18" height="18"></div>
-                        <p class="audio-time txt-white">00:00</p>
-                        <div>
-                            <progress class="audio-timeline" value="50" max="100"></progress>
-                        </div>
-                        <div class="audio-btn-volume"><img src="media/audioplayer/VolumeOn.svg" alt="" width="22" height="18"></div>
-                        <div>
-                            <progress class="audio-volumeline" value="30" max="100"></progress>
-                        </div>
-                        <audio>
-                            <source src="media/audio-file.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
-
-                    <h2 class="f-bold f-24 txt-logo">Audio Post Style</h2>
-
-                    <p>By Tran Mau Tri Tam &nbsp; | &nbsp; Music</p>
-                </header>
-
-                <p>In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa...</p>
-
-                <footer>
-                    <p><span class="far">&#xf086</span> 24 Comments &nbsp; | &nbsp; <span class="far">&#xf073</span> 24 July, 2017 &nbsp; | &nbsp; <span class="far">&#xf004</span> 124 Likes</p>
-                </footer>
-            </section>
+            
 
             <!-- POST text only 2__________________________________________ -->
             <section class="bck-white masonry-item textonly">
@@ -420,20 +392,32 @@
             <!-- POST Audio 2__________________________________________ -->
             <section class="bck-white masonry-item">
                 <header>
-                    <div class="audioplayer bck-main-light flex-spaceb flex-align">
-                        <div class="audio-btn-play"><img src="media/audioplayer/play.svg" alt="" width="18" height="18"></div>
-                        <p class="audio-time txt-white">00:00</p>
-                        <div>
-                            <progress class="audio-timeline" value="50" max="100"></progress>
-                        </div>
-                        <div class="audio-btn-volume"><img src="media/audioplayer/VolumeOn.svg" alt="" width="22" height="18"></div>
-                        <div>
-                            <progress class="audio-volumeline" value="30" max="100"></progress>
-                        </div>
-                        <audio>
-                            <source src="media/audio-file.mp3" type="audio/mpeg">
-                        </audio>
+                    <div class="audio-player-cont bck-main-light flex-spaceb flex-align">
+                        <!-- audio source  -->
+                            <audio id="song">
+                                <source src="media/audio-file1.mp3" type="audio/mpeg">
+                                <p>Votre navigateur ne prend pas en charge l'audio HTML.</p>
+                            </audio>
+                            <!-- play button  -->
+                            <div><img src="media/audioplayer/play.svg" onclick="playOrPauseSong(this);" alt="" width="18" height="18"></div>
+                            <!-- timer  -->
+                            <div id="currentTime"  class="current-time txt-white">00:00</div>
+                            <!-- song slider  -->
+                            <div class="audioSlider">
+                                <div class="sliderBack"></div>
+                                <div id="sliderTime" class="sliderTime"></div>
+                                <input id="songSlider" class="song-slider" width="75" type="range" min="0" step="1" oninput="seekSong()">
+                            </div>
+                            <!-- volume button  -->
+                            <div><img src="media/audioplayer/VolumeOn.svg" onclick="muteOrUnmute(this);" alt="" width="18" height="18"></div>
+                            <!-- volume slider  -->
+                            <div class="audioSlider">
+                                <div class="volumeBack"></div>
+                                <div id="volumeTime" class="volumeTime"></div>
+                                <input id="volumeSlider" class="volume-slider" type="range" min="0" max="1" step="0.01" oninput="adjustVolume()">
+                            </div>
                     </div>
+                    
 
                     <h2 class="f-bold f-24 txt-logo">Audio Post Style</h2>
 
@@ -525,5 +509,8 @@
     <div style="height: 9999px;"></div>
     <!-- Lien icones Font Awesome______________________________________________________________________ -->
     <script src="https://kit.fontawesome.com/d5dcbc8efb.js" crossorigin="anonymous"></script>
+    <!-- Script AUDIO PLAYER______________________________________________________________________ -->
+    <!-- <script src="scripts/audioplayer.js"></script> -->
+    <script src="scripts/test.js"></script>
 </body>
 </html>
