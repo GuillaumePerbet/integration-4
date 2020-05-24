@@ -9,4 +9,12 @@
   display: inline-block;
   width: 100%;
   border: 1px solid map-get($colors, 'grey');
+  margin:1rem 0;
+}
+
+.media {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
 }
