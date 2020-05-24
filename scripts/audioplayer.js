@@ -4,7 +4,9 @@ let playerList = document.getElementsByClassName("audioplayer");
 let playerObjects =[];
 
 // Initialize Player Objects and components after window is loaded
-window.onload = initPlayers();
+window.onload = function(){
+    initPlayers();
+}
 function initPlayers(){
     // Create player object for each listed audio player
     for (let i = 0; i < playerList.length; i++) {
