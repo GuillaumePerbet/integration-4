@@ -264,7 +264,7 @@ section{
         padding: 10px 20px;
     }
     &:hover{
-        @extend %bck-main-dark;
+        @extend %bck-logo;
         header{
             div{
                 @extend %txt-sec;
