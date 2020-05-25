@@ -9,8 +9,10 @@
 
 
 //HEADER________________________________________________
+#stickyNav{position: sticky; top:0; }
 #topbar{
-
+    overflow: hidden;
+    transition: ease-in-out 0.2s;
     form{
         flex-grow: 1;
 
@@ -48,10 +50,10 @@
     }
 
     ul{
-        margin: 0 3rem;
+        margin-left:3rem;
 
         li{
-            padding: 0 0.1rem;
+            padding: 0 0.5rem;
         }
     }
 }
@@ -71,30 +73,33 @@
         margin: 0 auto 1.25rem;
         @extend %bck-sec;
     }
-
+    overflow: hidden;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
     padding-bottom: 1.5rem;
+    max-height: 99px;
+    transition: ease-in-out 0.4s;
 
     #logo{
+        margin-right: 2rem;
         img{
             margin-right: 1rem;
         }
     }
-
+    #menu-button{
+        cursor: pointer;
+        display: none;
+        border: 1px solid map-get($colors, 'grey');
+        border-radius: 5px;
+    }
     nav{
         flex: 1;
-        margin-right: 3rem;
-        margin-left: 0.5rem;
+        margin-left: 3rem;
+        menu{margin: 0;
+            li{padding: 1rem 0;}
+        }
 
         a:hover{
             @extend %txt-sec;
-        }
-
-        button{
-            cursor: pointer;
-            display: none;
-            position: relative;
-            z-index: 1;
         }
     }
 
@@ -106,6 +111,7 @@
 }
 
 #breadcrumb{
+    a:hover{@extend %txt-sec}
     .fa{
         margin: auto 1.5rem;
     }
@@ -222,18 +228,17 @@ section{
 // Standard Hover_________________________________________
 .standard-img{
     position: relative;
-    &:hover{
-        .standard-hover{display: flex;}
-    }
     .standard-hover{
-        display: none;
+        opacity: 0;
         justify-content: center;
         position: absolute;
         top: 0px;
         left: 0px;
         width:100%;
         height: 100%;
+        transition: ease-in-out 0.3s;
         p:nth-child(2){margin-top: 20px;}
+        &:hover{opacity: 1;}
         .btn-round>a{
             display: block;
             border: 1px solid map-get($colors, 'white');
@@ -255,6 +260,7 @@ section{
 .colorblock{
     display: block;
     margin-bottom: 35px;
+    transition: ease-in-out 0.3s;
     header{
         box-sizing: border-box;
         padding: 20px 50px 0px 20px;

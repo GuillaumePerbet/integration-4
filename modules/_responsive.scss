@@ -17,35 +17,17 @@
 
     // HEADER
     #nav{
-        #logo{
-            flex: 1;
+        #menu-button{display: block;}
+        &>div{flex-wrap: wrap;
+            &>div{flex: 0 100%; padding-bottom: 1.5rem;}
         }
-
-        nav{
-            flex: 0;
-
-            menu{
-                display: none;
-                position: absolute;
-                flex-wrap: wrap;
-                right: 8.5rem;
-                top: 3rem;
-                width: 19rem;
-
-                li{
-                    flex: 30%;
-                    a{
-                        display: inline-block;
-                        padding: 0.2rem 0;
-                        color: map-get($colors, 'sec' );
-                    }
-                }
-            }
-            button{
-                display: block;
-            }
-        }
+        nav{margin-left: 0; padding-top: 10px;}
     }
+
+
+    menu{border-top:1px solid map-get($colors , 'sec' );
+    }
+
 
     // footer
     #footerTop .container{
@@ -70,37 +52,19 @@
     .masonry-item {max-width: 70%; margin: 0.5rem 15%;}
 
     // HEADER
-    #nav{
-        box-shadow: none;
-        nav{
-            menu{
-                width: 12rem;
-                right: 6rem;
-
-                li{
-                    flex: 40%;
-                }
-            }
-        }
+    menu{flex-wrap: wrap;
+        li{flex: 0 20%; text-align: center;}
     }
-
-    #title{
-        margin-top: 0;
-
-        h1{
-            margin-top: 0;
-        }
-
-        #breadcrumb{
-            display: none;
-        }
+    #topSocial{display: none;}
+    #title{flex-wrap: wrap;
+        h1{padding-right: 3rem;}
     }
-
     // footer
     #navbottom{ flex-wrap: wrap; justify-content: center;
         p{flex: 0 100%;text-align: center;order: 1;}
     }
     .btn-navbottom{margin: 0 5px;}
+    
 }
 
 // XS_____________________________________________________________________________________
@@ -109,34 +73,9 @@
     .masonry-item {max-width: 96%; margin: 0.5rem 2%;}
 
     // HEADER
-    #topbar{
-        ul{
-            display: none;
-        }
-    }
-
-    #nav{
-        nav{
-            margin-right: 0;
-
-            menu{
-                width: 6rem;
-                right: 2rem;
-
-                li{
-                    flex: 100%;
-                }
-            }
-        }
-
-        .icon-search{
-            display: none;
-        }
-    }
-
-    #title{
-        h1{
-            width: 10rem;
+    menu{flex-wrap: wrap;
+        li{flex: 0 30%; text-align: center;
+        &:nth-child(10){display: none;}
         }
     }
 }
