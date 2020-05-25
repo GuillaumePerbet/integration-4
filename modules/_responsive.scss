@@ -16,6 +16,12 @@
     .masonry-item {max-width: 46%; margin: 0.5rem 2%;}
 
     // HEADER
+    #topbar{
+        form{
+            margin-left: 1rem;
+        }
+    }
+
     #nav{
         padding-bottom: 0.5rem;
 
@@ -25,6 +31,7 @@
 
         #logo{
             margin-right: 2rem;
+            margin-left: 1rem;
         }
         
         nav{
@@ -43,6 +50,16 @@
                     }
                 }
             }
+        }
+    }
+
+    #title{
+        h1{
+            margin-left: 1rem;
+        }
+
+        #breadcrumb{
+            margin-right: 1rem;
         }
     }
 
