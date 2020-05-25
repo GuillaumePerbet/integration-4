@@ -65,9 +65,18 @@
         }
     }
 
-    #breadcrumb{
-        display: none;
+    #title{
+        margin-top: 0;
+        
+        h1{
+            margin-top: 0;
+        }
+
+        #breadcrumb{
+            display: none;
+        }
     }
+
 }
 
 // XS_____________________________________________________________________________________
