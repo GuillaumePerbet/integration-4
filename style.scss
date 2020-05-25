@@ -120,6 +120,9 @@ main>div{
 section{
     padding: 1.25rem;
 
+    p:not(.btn)>a:hover{color:map-get($colors , 'sec' );}
+    .like:hover{color:map-get($colors , 'sec' );cursor: pointer;}
+
     header{
 
         &::after{
