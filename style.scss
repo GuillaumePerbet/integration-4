@@ -89,6 +89,11 @@
         a:hover{
             @extend %txt-sec;
         }
+
+        button{
+            cursor: pointer;
+            display: none;
+        }
     }
 
 }
