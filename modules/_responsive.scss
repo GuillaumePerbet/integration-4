@@ -14,9 +14,30 @@
 
     // HEADER
     #nav{
+        #logo{
+            flex: 1;
+        }
+
         nav{
+            flex: 0;
+
             menu{
                 display: none;
+                position: absolute;
+                flex-wrap: wrap;
+                z-index: 1;
+                right: 8.5rem;
+                top: 3rem;
+                width: 19rem;
+
+                li{
+                    flex: 30%;
+                    a{
+                        display: inline-block;
+                        padding: 0.2rem 0;
+                        color: map-get($colors, 'sec' );
+                    }
+                }
             }
             button{
                 display: block;
