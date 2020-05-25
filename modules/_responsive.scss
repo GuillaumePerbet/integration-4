@@ -17,32 +17,31 @@
 
     // HEADER
     #nav{
-        #logo{
-            flex: 1;
+        padding-bottom: 0;
+
+        &::before{
+            margin-bottom: 0;
         }
 
+        #logo{
+            margin-right: 2rem;
+        }
+        
         nav{
-            flex: 0;
+            margin-right: 0;
 
             menu{
-                display: none;
-                position: absolute;
                 flex-wrap: wrap;
-                right: 8.5rem;
-                top: 3rem;
-                width: 19rem;
+                justify-content: left;
 
                 li{
-                    flex: 30%;
+                    flex: 0 0 20%;
+
                     a{
                         display: inline-block;
                         padding: 0.2rem 0;
-                        color: map-get($colors, 'sec' );
                     }
                 }
-            }
-            #menu-button{
-                display: block;
             }
         }
     }
@@ -72,15 +71,32 @@
     // HEADER
     #nav{
         box-shadow: none;
+
         nav{
+            margin-right: 0;
+
             menu{
+                display: none;
+                position: absolute;
                 width: 12rem;
+                top: 3rem;
                 right: 6rem;
 
                 li{
                     flex: 40%;
+
+                    a{
+                        color: map-get($colors, 'sec' );
+                    }
                 }
             }
+            #menu-button{
+                display: block;
+            }
+        }
+
+        .icon-search{
+            display: none;
         }
     }
 
@@ -117,7 +133,6 @@
 
     #nav{
         nav{
-            margin-right: 0;
 
             menu{
                 width: 6rem;
@@ -127,10 +142,6 @@
                     flex: 100%;
                 }
             }
-        }
-
-        .icon-search{
-            display: none;
         }
     }
 
