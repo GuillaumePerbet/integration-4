@@ -17,10 +17,10 @@
 
     // HEADER
     #nav{
-        padding-bottom: 0;
+        padding-bottom: 0.5rem;
 
         &::before{
-            margin-bottom: 0;
+            margin-bottom: 0.5rem;
         }
 
         #logo{
@@ -28,7 +28,6 @@
         }
         
         nav{
-            margin-right: 0;
 
             menu{
                 flex-wrap: wrap;
@@ -36,10 +35,11 @@
 
                 li{
                     flex: 0 0 20%;
+                    text-align: center;
 
                     a{
                         display: inline-block;
-                        padding: 0.2rem 0;
+                        padding: 0.5rem 0;
                     }
                 }
             }
@@ -70,47 +70,25 @@
 
     // HEADER
     #nav{
-        box-shadow: none;
+
+        &::before{
+            margin-bottom: 0;
+        }
 
         nav{
-            margin-right: 0;
 
             menu{
-                display: none;
-                position: absolute;
-                width: 12rem;
-                top: 3rem;
-                right: 6rem;
-
                 li{
-                    flex: 40%;
-
-                    a{
-                        color: map-get($colors, 'sec' );
-                    }
+                    flex: 30%;
                 }
             }
-            #menu-button{
-                display: block;
-            }
-        }
+        }    
 
         .icon-search{
             display: none;
         }
     }
 
-    #title{
-        margin-top: 0;
-
-        h1{
-            margin-top: 0;
-        }
-
-        #breadcrumb{
-            display: none;
-        }
-    }
 
     // footer
     #navbottom{ flex-wrap: wrap; justify-content: center;

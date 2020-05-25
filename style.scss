@@ -86,7 +86,6 @@
 
     nav{
         flex: 1;
-        margin-right: 3rem;
         margin-left: 0.5rem;
 
         a:hover{
@@ -98,6 +97,7 @@
             display: none;
             position: relative;
             z-index: 1;
+            margin-right: 1rem;
         }
     }
 
