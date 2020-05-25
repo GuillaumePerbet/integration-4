@@ -25,7 +25,6 @@
                 display: none;
                 position: absolute;
                 flex-wrap: wrap;
-                z-index: 1;
                 right: 8.5rem;
                 top: 3rem;
                 width: 19rem;
@@ -51,6 +50,24 @@
     .container{margin: 0 2vw;}
     .masonry{max-height: 650rem;}
     .masonry-item {max-width: 70%; margin: 0.5rem 15%;}
+
+    #nav{
+        box-shadow: none;
+        nav{
+            menu{
+                width: 12rem;
+                right: 6rem;
+
+                li{
+                    flex: 40%;
+                }
+            }
+        }
+    }
+
+    #breadcrumb{
+        display: none;
+    }
 }
 
 // XS_____________________________________________________________________________________
