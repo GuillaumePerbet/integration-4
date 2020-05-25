@@ -51,6 +51,7 @@
     .masonry{max-height: 650rem;}
     .masonry-item {max-width: 70%; margin: 0.5rem 15%;}
 
+    // HEADER
     #nav{
         box-shadow: none;
         nav{
@@ -67,7 +68,7 @@
 
     #title{
         margin-top: 0;
-        
+
         h1{
             margin-top: 0;
         }
@@ -82,4 +83,36 @@
 // XS_____________________________________________________________________________________
 @media (max-width: 575.98px) {
     .masonry-item {max-width: 96%; margin: 0.5rem 2%;}
+
+    // HEADER
+    #topbar{
+        ul{
+            display: none;
+        }
+    }
+
+    #nav{
+        nav{
+            margin-right: 0;
+
+            menu{
+                width: 6rem;
+                right: 2rem;
+
+                li{
+                    flex: 100%;
+                }
+            }
+        }
+
+        .icon-search{
+            display: none;
+        }
+    }
+
+    #title{
+        h1{
+            width: 10rem;
+        }
+    }
 }
