@@ -1,7 +1,10 @@
 // Container Class
 .masonry {
-    column-count: 3;
-    column-gap: 1.8em;
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 220rem;
+  align-items: center;
+  overflow: hidden;
   }
 // Item Class
 .masonry-item {
@@ -9,7 +12,8 @@
   display: inline-block;
   width: 100%;
   border: 1px solid map-get($colors, 'grey');
-  margin:1rem 0;
+  max-width: 32%;
+  margin:0.5rem;
 }
 
 .media {
