@@ -333,7 +333,7 @@ section{
 }
 
 // NAV BOTTOM____________________________________________
-#navbottom{ padding-top: 100px; padding-bottom: 30px; border-top: 1px solid map-get($colors, 'grey');  }
+#navbottom{ padding-top: 100px; padding-bottom: 30px; border-top: 1px solid map-get($colors, 'grey'); align-items: center; }
 .btn-navbottom{
     border-radius: 5px;
     margin-left: 10px;
@@ -352,9 +352,7 @@ section{
         margin-top: 15px;
     }
     &:hover{
-        svg{
-            fill: map-get($colors , 'sec' );
-        }
+        svg{fill: map-get($colors , 'sec' );}
     }
 }
 
@@ -366,9 +364,8 @@ section{
 #footerDown{
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding:    22px 0px;
-    ul      { flex: 0 18%;          }
+    ul      { flex: 0 200px;          }
     a:hover { @extend %txt-white;   }
-    p       { padding-top: 8px;     }
 }
 .footer-sec{
     flex: 0 24%;
@@ -389,6 +386,7 @@ section{
     }
     &:nth-child(4){
         p:nth-child(4){ line-height: 1.9;}
+        a{color:map-get($colors , 'sec' );}
     }
 }
 
