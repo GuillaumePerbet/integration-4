@@ -193,13 +193,14 @@ section{
 .slider{
     position: relative;
     overflow: hidden;
+    max-width: 330px;
+    margin: auto;
 
     div{
         &:first-of-type{
-            max-width: 330px;
             position: relative;
             left: 0;
-            transition: 1s;
+            transition: 0.5s;
         }
 
         &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
