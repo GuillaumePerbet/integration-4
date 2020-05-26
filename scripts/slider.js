@@ -38,11 +38,19 @@ sliders.forEach((slider, index) =>{
     const rightButton=slider.lastElementChild;
     rightButton.addEventListener('click', ()=>{
         sliderTable[index].slideRight();
+        leftButton.style.display='block';
+        if (sliderTable[index].position==sliderTable[index].max){
+            rightButton.style.display='none';
+        }
     });
 
     //left button event
     const leftButton=slider.lastElementChild.previousElementSibling;
     leftButton.addEventListener('click', ()=>{
         sliderTable[index].slideLeft();
+        rightButton.style.display='block';
+        if (sliderTable[index].position==1){
+            leftButton.style.display='none';
+        }
     });
 });
