@@ -196,6 +196,7 @@ section{
 
     div{
         &:first-of-type{
+            max-width: 330px;
             position: relative;
             left: 0;
             transition: 1s;
