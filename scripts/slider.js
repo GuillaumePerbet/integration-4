@@ -10,7 +10,7 @@ class Slider{
         if (this.position<this.max){
             this.position++;
             let images=this.slider.querySelector('div');
-            images.style.left=parseInt(window.getComputedStyle(images).left, 10)-330+'px';
+            images.style.left=parseFloat(window.getComputedStyle(images).left, 10)-parseFloat(window.getComputedStyle(images).width,10)+'px';
         }
         return
     }
@@ -19,7 +19,7 @@ class Slider{
         if (this.position>1){
             this.position--;
             let images=this.slider.querySelector('div');
-            images.style.left=parseInt(window.getComputedStyle(images).left, 10)+330+'px';
+            images.style.left=parseFloat(window.getComputedStyle(images).left, 10)+parseFloat(window.getComputedStyle(images).width,10)+'px';
         }
         return
     }
