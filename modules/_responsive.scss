@@ -49,9 +49,14 @@
         ul{ flex: 0 100%; order: -1;padding: 0 10%; font-size: 1.5rem;}
     }
 }
+@media (max-width: 891.98px) {
+    .container{margin: 0 1vw;}
+    // masonry
+    .masonry-item {max-width: 49%; margin: 0.5rem 0.5%;}
 
+}
 // S_____________________________________________________________________________________
-@media (max-width: 767.98px) {
+@media (max-width: 797.98px) {
     .container{margin: 0 2vw;}
     // masonry
     .masonry{max-height: 650rem;}
@@ -70,7 +75,6 @@
         p{flex: 0 100%;text-align: center;order: 1;}
     }
     .btn-navbottom{margin: 0 5px;}
-    
 }
 
 // XS_____________________________________________________________________________________
