@@ -1,27 +1,48 @@
+//slider objects
+class Slider{
+    constructor(slider){      
+        this.slider=slider;
+        this.position=1;
+        this.max=slider.querySelectorAll('img').length;
+    }
 
-//slide functions
-function slideRight(slider){
-    const image=slider.querySelector('div');
-    image.style.left=parseInt(window.getComputedStyle(image).left, 10)-330+'px';
+    slideRight(){
+        if (this.position<this.max){
+            this.position++;
+            let images=this.slider.querySelector('div');
+            images.style.left=parseInt(window.getComputedStyle(images).left, 10)-330+'px';
+        }
+        return
+    }
+
+    slideLeft(){
+        if (this.position>1){
+            this.position--;
+            let images=this.slider.querySelector('div');
+            images.style.left=parseInt(window.getComputedStyle(images).left, 10)+330+'px';
+        }
+        return
+    }
 }
-function slideLeft(slider){
-    const image=slider.querySelector('div');
-    image.style.left=parseInt(window.getComputedStyle(image).left, 10)+330+'px';
-}
 
-//boucle sur les sliders
-const sliders=document.getElementsByClassName('slider');
-for (let slider of sliders){
+let sliderTable=[];
 
-    //bouton droit
+//loop on slider sections
+const sliders=Array.from(document.getElementsByClassName('slider'));
+
+sliders.forEach((slider, index) =>{
+    //add slider object to table
+    sliderTable.push( new Slider(slider));
+
+    //right button event
     const rightButton=slider.lastElementChild;
     rightButton.addEventListener('click', ()=>{
-        slideRight(slider);
+        sliderTable[index].slideRight();
     });
 
-    //bouton gauche
+    //left button event
     const leftButton=slider.lastElementChild.previousElementSibling;
     leftButton.addEventListener('click', ()=>{
-        slideLeft(slider);
+        sliderTable[index].slideLeft();
     });
-}
+});
