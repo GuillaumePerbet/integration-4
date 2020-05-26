@@ -1,11 +1,12 @@
+
 //slide functions
 function slideRight(slider){
     const image=slider.querySelector('div');
-    image.style.left=parseInt(window.getComputedStyle(image).left, 10)+330+'px';
+    image.style.left=parseInt(window.getComputedStyle(image).left, 10)-330+'px';
 }
 function slideLeft(slider){
     const image=slider.querySelector('div');
-    image.style.left=parseInt(window.getComputedStyle(image).left, 10)-330+'px';
+    image.style.left=parseInt(window.getComputedStyle(image).left, 10)+330+'px';
 }
 
 //boucle sur les sliders
