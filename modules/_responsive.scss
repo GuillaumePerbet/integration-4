@@ -23,45 +23,17 @@
     }
 
     #nav{
-        padding-bottom: 0.5rem;
-
-        &::before{
-            margin-bottom: 0.5rem;
+        #menu-button{display: block;}
+        &>div{flex-wrap: wrap;
+            &>div{flex: 0 100%; padding-bottom: 1.5rem;}
         }
-
-        #logo{
-            margin-right: 2rem;
-            margin-left: 1rem;
-        }
-        
-        nav{
-
-            menu{
-                flex-wrap: wrap;
-                justify-content: left;
-
-                li{
-                    flex: 0 0 20%;
-                    text-align: center;
-
-                    a{
-                        display: inline-block;
-                        padding: 0.5rem 0;
-                    }
-                }
-            }
-        }
+        nav{margin-left: 0; padding-top: 10px;}
     }
 
-    #title{
-        h1{
-            margin-left: 1rem;
-        }
 
-        #breadcrumb{
-            margin-right: 1rem;
-        }
+    menu{border-top:1px solid map-get($colors , 'sec' );
     }
+
 
     // footer
     #footerTop .container{
@@ -86,48 +58,19 @@
     .masonry-item {max-width: 70%; margin: 0.5rem 15%;}
 
     // HEADER
-    #topbar{
-        justify-content: space-between;
-
-        form{
-            flex-grow: 0;
-        }
-
-        button{
-            margin-right: 1.5rem;
-        }
-
-        ul{
-            margin-left: 0;
-        }
+    menu{flex-wrap: wrap;
+        li{flex: 0 20%; text-align: center;}
     }
-
-    #nav{
-
-        &::before{
-            margin-bottom: 0;
-        }
-
-        nav{
-
-            menu{
-                li{
-                    flex: 30%;
-                }
-            }
-        }    
-
-        .icon-search{
-            display: none;
-        }
+    #topSocial{display: none;}
+    #title{flex-wrap: wrap;
+        h1{padding-right: 3rem;}
     }
-
-
     // footer
     #navbottom{ flex-wrap: wrap; justify-content: center;
         p{flex: 0 100%;text-align: center;order: 1;}
     }
     .btn-navbottom{margin: 0 5px;}
+    
 }
 
 // XS_____________________________________________________________________________________
@@ -136,29 +79,9 @@
     .masonry-item {max-width: 96%; margin: 0.5rem 2%;}
 
     // HEADER
-    #topbar{
-        ul{
-            display: none;
-        }
-    }
-
-    #nav{
-        nav{
-
-            menu{
-                width: 6rem;
-                right: 2rem;
-
-                li{
-                    flex: 100%;
-                }
-            }
-        }
-    }
-
-    #title{
-        h1{
-            width: 10rem;
+    menu{flex-wrap: wrap;
+        li{flex: 0 30%; text-align: center;
+        &:nth-child(10){display: none;}
         }
     }
 }
