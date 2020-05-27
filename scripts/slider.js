@@ -9,8 +9,7 @@ class Slider{
     slideRight(){
         if (this.position<this.max){
             this.position++;
-            let images=this.slider.querySelector('div');
-            images.style.left=parseFloat(window.getComputedStyle(images).left, 10)-parseFloat(window.getComputedStyle(images).width,10)+'px';
+            this.resizer();
         }
         return;
     }
@@ -18,8 +17,7 @@ class Slider{
     slideLeft(){
         if (this.position>1){
             this.position--;
-            let images=this.slider.querySelector('div');
-            images.style.left=parseFloat(window.getComputedStyle(images).left, 10)+parseFloat(window.getComputedStyle(images).width,10)+'px';
+            this.resizer();
         }
         return;
     }
