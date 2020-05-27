@@ -57,6 +57,6 @@ sliders.forEach((slider) =>{
 
     //resizing
     window.addEventListener('resize', ()=>{
-        setTimeout(()=>{sliderObject.resizer();}, 300);
+        setTimeout(()=>{sliderObject.resizer();}, 500);
     });
 });
