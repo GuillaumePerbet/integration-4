@@ -1,7 +1,7 @@
 //slider objects
 class Slider{
     constructor(slider){      
-        this.slider=slider;
+        this.images=slider.querySelector('div');
         this.position=1;
         this.max=slider.querySelectorAll('img').length;
     }
@@ -23,8 +23,7 @@ class Slider{
     }
 
     resizer(){
-        let images=this.slider.querySelector('div');
-        images.style.left=parseFloat(window.getComputedStyle(images).width,10)*(-this.position+1)+'px';
+        this.images.style.left=parseFloat(window.getComputedStyle(this.images).width,10)*(-this.position+1)+'px';
         return;
     }
 }
@@ -57,7 +56,7 @@ sliders.forEach((slider) =>{
     });
 
     //resizing
-    window.addEventListener('resize',()=>{
-        sliderObject.resizer();
+    window.addEventListener('resize', ()=>{
+        setTimeout(()=>{sliderObject.resizer();}, 300);
     });
 });
