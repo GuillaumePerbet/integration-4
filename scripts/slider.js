@@ -12,7 +12,7 @@ class Slider{
             let images=this.slider.querySelector('div');
             images.style.left=parseFloat(window.getComputedStyle(images).left, 10)-parseFloat(window.getComputedStyle(images).width,10)+'px';
         }
-        return
+        return;
     }
 
     slideLeft(){
@@ -21,25 +21,29 @@ class Slider{
             let images=this.slider.querySelector('div');
             images.style.left=parseFloat(window.getComputedStyle(images).left, 10)+parseFloat(window.getComputedStyle(images).width,10)+'px';
         }
-        return
+        return;
+    }
+
+    resizer(){
+        let images=this.slider.querySelector('div');
+        images.style.left=parseFloat(window.getComputedStyle(images).width,10)*(-this.position+1)+'px';
+        return;
     }
 }
-
-let sliderTable=[];
 
 //loop on slider sections
 const sliders=Array.from(document.getElementsByClassName('slider'));
 
-sliders.forEach((slider, index) =>{
-    //add slider object to table
-    sliderTable.push( new Slider(slider));
+sliders.forEach((slider) =>{
+
+    let sliderObject=new Slider(slider);
 
     //right button event
     const rightButton=slider.lastElementChild;
     rightButton.addEventListener('click', ()=>{
-        sliderTable[index].slideRight();
+        sliderObject.slideRight();
         leftButton.style.display='block';
-        if (sliderTable[index].position==sliderTable[index].max){
+        if (sliderObject.position==sliderObject.max){
             rightButton.style.display='none';
         }
     });
@@ -47,10 +51,15 @@ sliders.forEach((slider, index) =>{
     //left button event
     const leftButton=slider.lastElementChild.previousElementSibling;
     leftButton.addEventListener('click', ()=>{
-        sliderTable[index].slideLeft();
+        sliderObject.slideLeft();
         rightButton.style.display='block';
-        if (sliderTable[index].position==1){
+        if (sliderObject.position==1){
             leftButton.style.display='none';
         }
+    });
+
+    //resizing
+    window.addEventListener('resize',()=>{
+        sliderObject.resizer();
     });
 });
